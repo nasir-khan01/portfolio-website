@@ -1,0 +1,37 @@
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+
+interface SectionProps {
+  id: string;
+  title?: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function Section({ id, title, children, className }: SectionProps) {
+  return (
+    <section
+      id={id}
+      className={cn("py-16 sm:py-24 md:py-32", className)}
+      data-testid={`section-${id}`}
+    >
+      <div className="max-w-2xl mx-auto px-5 sm:px-6">
+        {title && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+            className="flex items-center gap-4 mb-10 sm:mb-12"
+          >
+            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
+              {title}
+            </h2>
+            <div className="flex-1 h-px bg-gradient-to-r from-border to-transparent" />
+          </motion.div>
+        )}
+        {children}
+      </div>
+    </section>
+  );
+}

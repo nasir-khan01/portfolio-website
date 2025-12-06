@@ -1,0 +1,77 @@
+{
+  "name": "Nasir khan",
+  "resumeUrl": "https://drive.google.com/file/d/1sdVduaCnI-BgVQqbTOkmni268zi48VDt/view?usp=drive_link",
+  "email": "nasir.projects1@gmail.com",
+  "projectsTitle": "Projects",
+  "expertiseTitle": "My Expertise",
+  "expertise": [
+    {
+      "title": "Modern Frontend Architecture",
+      "keyFeatures": [
+        "Engineering complex, high-performance web apps using Next.js App Router and Server Components",
+        "Specialized in optimizing Core Web Vitals",
+        "Managing asynchronous server state",
+        "Implementing Atomic Design patterns"
+      ],
+      "techStack": [
+        "Next.js 14",
+        "TypeScript",
+        "TanStack Query",
+        "Zustand"
+      ]
+    },
+    {
+      "title": "Backend & System Design",
+      "keyFeatures": [
+        "Architecting scalable, fault-tolerant microservices and real-time systems",
+        "Handling high concurrency via WebSockets",
+        "Implementing Redis caching strategies",
+        "Optimizing complex SQL aggregations"
+      ],
+      "techStack": [
+        "Node.js",
+        "GraphQL",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "title": "DevOps & Infrastructure",
+      "keyFeatures": [
+        "Orchestrating production-grade containerized environments",
+        "Streamlining delivery lifecycles with multi-stage CI/CD pipelines (GitHub Actions)",
+        "Leveraging serverless edge computing for global low-latency"
+      ],
+      "techStack": [
+        "Docker",
+        "AWS Lambda",
+        "GitHub Actions",
+        "Vercel"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project One",
+      "description": "Description for project one.",
+      "timeline": "Jan 2024 - Mar 2024",
+      "tags": [
+        "React",
+        "TypeScript"
+      ],
+      "link": "https://example.com/project-one"
+    },
+    {
+      "id": 2,
+      "title": "Project Two",
+      "description": "Description for project two.",
+      "timeline": "Apr 2024 - Jun 2024",
+      "tags": [
+        "Node.js",
+        "Express"
+      ],
+      "link": "https://example.com/project-two"
+    }
+  ]
+}
