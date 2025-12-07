@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { useState } from "react";
 
 export interface Project {
@@ -30,8 +29,8 @@ export function ProjectShowcase({ projects }: ProjectShowcaseProps) {
       <div className="w-full h-px bg-zinc-800" />
 
       <div className="flex flex-col">
-          {visibleProjects.map((project, index) => (
-             <SwissGridRow key={project.id} project={project} index={index} />
+          {visibleProjects.map((project) => (
+             <SwissGridRow key={project.id} project={project} />
           ))}
       </div>
 
@@ -39,9 +38,9 @@ export function ProjectShowcase({ projects }: ProjectShowcaseProps) {
        {hasMore && (
            <div className="flex justify-center mt-12">
                <Button 
-                    variant="link" 
+                    variant="ghost" 
                     onClick={() => setVisibleCount((prev) => prev + 3)}
-                    className="text-zinc-500 hover:text-white transition-colors font-mono text-xs uppercase tracking-widest decoration-zinc-800 hover:decoration-white"
+                    className="text-zinc-500 hover:text-white transition-colors font-mono text-xs uppercase tracking-widest underline decoration-zinc-800 hover:decoration-white hover:bg-transparent"
                >
                  View All Projects
                </Button>
@@ -51,7 +50,7 @@ export function ProjectShowcase({ projects }: ProjectShowcaseProps) {
   );
 }
 
-function SwissGridRow({ project, index }: { project: Project; index: number }) {
+function SwissGridRow({ project }: { project: Project }) {
   return (
     <motion.a
       href={project.link}
