@@ -41,18 +41,12 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
-  const handleClick = () => {
-    console.log(`Navigating to project: ${project.title}`);
-  };
-
   return (
     <HoverBorderGradient containerClassName="h-full">
       <a
         href={project.link}
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick();
-        }}
+        target="_blank"
+        rel="noopener noreferrer"
         className="block p-5 sm:p-6 h-full group/card"
         data-testid={`card-project-${project.id}`}
       >

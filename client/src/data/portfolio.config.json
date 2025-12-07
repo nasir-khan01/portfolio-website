@@ -53,25 +53,17 @@
   "projects": [
     {
       "id": 1,
-      "title": "Project One",
-      "description": "Description for project one.",
-      "timeline": "Jan 2024 - Mar 2024",
+      "title": "Algo Visualizer",
+      "description": "A high-performance algorithm visualizer featuring lightweight client-side routing and a modular component system. Uses real-time state management to transparently demonstrate complex algorithmic concepts.",
       "tags": [
+        "Wouter",
+        "Shadcn UI",
+        "TailwindCSS",
         "React",
-        "TypeScript"
+        "Custom Hooks"
       ],
-      "link": "https://example.com/project-one"
-    },
-    {
-      "id": 2,
-      "title": "Project Two",
-      "description": "Description for project two.",
-      "timeline": "Apr 2024 - Jun 2024",
-      "tags": [
-        "Node.js",
-        "Express"
-      ],
-      "link": "https://example.com/project-two"
+      "link": "https://algo-visualizer-gray.vercel.app/"
     }
+
   ]
 }

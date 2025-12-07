@@ -1,5 +1,4 @@
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
-import { SpotifyWidget } from "./SpotifyWidget";
 import { cn } from "@/lib/utils";
 
 interface FooterProps {
@@ -7,10 +6,10 @@ interface FooterProps {
 }
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "#", testId: "link-github" },
-  { name: "Twitter", icon: Twitter, href: "#", testId: "link-twitter" },
-  { name: "LinkedIn", icon: Linkedin, href: "#", testId: "link-linkedin" },
-  { name: "Email", icon: Mail, href: "mailto:hello@example.com", testId: "link-email" },
+  { name: "GitHub", icon: Github, href: "https://github.com/nasir-khan01", testId: "link-github" },
+  { name: "Twitter", icon: Twitter, href: "https://x.com/nasir_khan83353", testId: "link-twitter" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/nasir-khan01/", testId: "link-linkedin" },
+  { name: "Email", icon: Mail, href: "mailto:nasir.projects1@gmail.com", testId: "link-email" },
 ];
 
 export function Footer({ className }: FooterProps) {
@@ -29,14 +28,17 @@ export function Footer({ className }: FooterProps) {
     >
       <div className="max-w-2xl mx-auto px-5 sm:px-6">
         <div className="flex flex-col items-center gap-6 sm:gap-8">
-          <SpotifyWidget />
+
           <div className="flex items-center gap-5 sm:gap-6">
             {socialLinks.map((link) => {
               const Icon = link.icon;
+              const isExternal = link.href.startsWith('http');
               return (
                 <a
                   key={link.name}
                   href={link.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noopener noreferrer" : undefined}
                   onClick={(e) => {
                     if (link.href === "#") {
                       e.preventDefault();
@@ -52,21 +54,6 @@ export function Footer({ className }: FooterProps) {
               );
             })}
           </div>
-          <p className="text-xs sm:text-sm text-muted-foreground/60 text-center">
-            Built with care. Open source on{" "}
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                console.log("Clicked source link");
-              }}
-              className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
-              data-testid="link-source"
-            >
-              GitHub
-            </a>
-            .
-          </p>
         </div>
       </div>
     </footer>

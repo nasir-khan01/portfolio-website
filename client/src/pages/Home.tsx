@@ -80,7 +80,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-20">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-12 sm:py-16">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex flex-col items-start text-left">
               <motion.div

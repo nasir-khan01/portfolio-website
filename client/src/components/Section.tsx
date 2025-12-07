@@ -12,7 +12,7 @@ export function Section({ id, title, children, className }: SectionProps) {
   return (
     <section
       id={id}
-      className={cn("py-16 sm:py-24 md:py-32", className)}
+      className={cn("py-10 sm:py-16 md:py-20", className)}
       data-testid={`section-${id}`}
     >
       <div className="max-w-2xl mx-auto px-5 sm:px-6">
