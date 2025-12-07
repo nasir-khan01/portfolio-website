@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Twitter, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 import { FloatingNav } from "@/components/FloatingNav";
 import { CodeWindow } from "@/components/CodeWindow";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -9,6 +9,7 @@ import { Section } from "@/components/Section";
 import { Footer } from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ContactForm } from "@/components/ContactForm";
 import { navItems } from "@/constants";
 import portfolioConfig from "@/data/portfolio.config.json";
 import type { Project } from "@/components/BentoGrid";
@@ -20,13 +21,6 @@ export default function Home() {
 
   const handleScrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const resumeUrl = portfolioConfig.resumeUrl;
-  const email = portfolioConfig.email;
-
-  const handleDownloadResume = () => {
-    window.open(resumeUrl, "_blank");
   };
 
   const name = portfolioConfig.name;
@@ -138,15 +132,6 @@ export default function Home() {
                   <Mail className="w-4 h-4" />
                   Get in touch
                 </Button>
-                <Button
-                  variant="outline"
-                  onClick={handleDownloadResume}
-                  className="gap-2"
-                  data-testid="button-download-resume"
-                >
-                  <FileText className="w-4 h-4" />
-                  Download Resume
-                </Button>
               </motion.div>
 
               <motion.div
@@ -233,31 +218,11 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="text-muted-foreground mb-6 max-w-md mx-auto leading-relaxed">
-            Have a project in mind or just want to chat? I'm always open to 
-            discussing new opportunities and ideas.
+          <p className="text-muted-foreground mb-8 max-w-md mx-auto leading-relaxed">
+            Have a project in mind or just want to chat? Fill out the form below 
+            and I'll get back to you as soon as possible.
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Button
-              asChild
-              className="gap-2"
-              data-testid="button-email-contact"
-            >
-              <a href={`mailto:${email}`}>
-                <Mail className="w-4 h-4" />
-                {email}
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              onClick={handleDownloadResume}
-              className="gap-2"
-              data-testid="button-resume-contact"
-            >
-              <FileText className="w-4 h-4" />
-              Download Resume
-            </Button>
-          </div>
+          <ContactForm />
         </motion.div>
       </Section>
 
