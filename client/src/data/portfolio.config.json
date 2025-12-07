@@ -6,21 +6,6 @@
   "expertiseTitle": "My Expertise",
   "expertise": [
     {
-      "title": "Modern Frontend Architecture",
-      "keyFeatures": [
-        "Engineering complex, high-performance web apps using Next.js App Router and Server Components",
-        "Specialized in optimizing Core Web Vitals",
-        "Managing asynchronous server state",
-        "Implementing Atomic Design patterns"
-      ],
-      "techStack": [
-        "Next.js 14",
-        "TypeScript",
-        "TanStack Query",
-        "Zustand"
-      ]
-    },
-    {
       "title": "Backend & System Design",
       "keyFeatures": [
         "Architecting scalable, fault-tolerant microservices and real-time systems",
@@ -33,6 +18,21 @@
         "GraphQL",
         "PostgreSQL",
         "Redis"
+      ]
+    },
+    {
+      "title": "Modern Frontend Architecture",
+      "keyFeatures": [
+        "Engineering complex, high-performance web apps using Next.js App Router and Server Components",
+        "Specialized in optimizing Core Web Vitals",
+        "Managing asynchronous server state",
+        "Implementing Atomic Design patterns"
+      ],
+      "techStack": [
+        "Next.js 14",
+        "TypeScript",
+        "TanStack Query",
+        "Zustand"
       ]
     },
     {
@@ -62,7 +62,7 @@
         "React",
         "Custom Hooks"
       ],
-      "link": "https://algo-visualizer-gray.vercel.app/",
+      "link": "https://algo-visualizer-live.vercel.app/",
       "github": "",
       "image": "",
       "keyFeatures": [

@@ -114,8 +114,8 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg"
               >
-                A full-stack developer who loves crafting beautiful, 
-                performant web experiences. I turn ideas into elegant code.
+                A backend specialized full stack developer with 4 years of experience. 
+                I architect scalable systems and craft beautiful, high performance frontend interfaces.
               </motion.p>
 
               <motion.div
