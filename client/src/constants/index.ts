@@ -40,31 +40,4 @@ export const projects = [
   },
 ];
 
-// todo: remove mock functionality - replace with real timeline
-export const timeline = [
-  {
-    year: "2024",
-    title: "Joined Acme Corp as Senior Engineer",
-    description: "Leading the frontend architecture team and mentoring junior developers on React best practices.",
-  },
-  {
-    year: "2023",
-    title: "Launched Velocity",
-    description: "Built and shipped a real-time collaboration tool that grew to 10k+ active users in the first month.",
-  },
-  {
-    year: "2022",
-    title: "Open Source Contributions",
-    description: "Became a core contributor to several popular open source projects in the React ecosystem.",
-  },
-  {
-    year: "2021",
-    title: "Started Freelancing",
-    description: "Worked with startups and agencies to build MVPs and scale their engineering teams.",
-  },
-  {
-    year: "2020",
-    title: "First Developer Role",
-    description: "Joined a seed-stage startup as a full-stack developer, wearing many hats and learning fast.",
-  },
-];
+
