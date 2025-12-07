@@ -41,3 +41,20 @@ export const projects = [
 ];
 
 
+export const timeline = [
+  {
+    year: "2024",
+    title: "Senior Full Stack Engineer",
+    description: "Leading development of scalable microservices and real-time applications using Next.js, Node.js, and Cloud Infrastructure.",
+  },
+  {
+    year: "2022",
+    title: "Full Stack Developer",
+    description: "Built and maintained complex web applications, optimized database performance, and implemented CI/CD pipelines.",
+  },
+  {
+    year: "2020",
+    title: "Frontend Developer",
+    description: "Developed responsive user interfaces and interactive components using React and modern CSS frameworks.",
+  },
+];
