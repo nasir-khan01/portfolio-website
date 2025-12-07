@@ -8,14 +8,14 @@ interface SectionProps {
   className?: string;
 }
 
-export function Section({ id, title, children, className }: SectionProps) {
+export function Section({ id, title, children, className, containerClassName }: SectionProps & { containerClassName?: string }) {
   return (
     <section
       id={id}
       className={cn("py-10 sm:py-16 md:py-20", className)}
       data-testid={`section-${id}`}
     >
-      <div className="max-w-2xl mx-auto px-5 sm:px-6">
+      <div className={cn("max-w-2xl mx-auto px-5 sm:px-6", containerClassName)}>
         {title && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}

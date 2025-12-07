@@ -3,7 +3,7 @@ import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 import { FloatingNav } from "@/components/FloatingNav";
 import { CodeWindow } from "@/components/CodeWindow";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { BentoGrid } from "@/components/BentoGrid";
+import { ProjectShowcase } from "@/components/ProjectShowcase";
 import { Expertise } from "@/components/Expertise";
 import { Section } from "@/components/Section";
 import { Footer } from "@/components/Footer";
@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import { navItems } from "@/constants";
 import portfolioConfig from "@/data/portfolio.config.json";
-import type { Project } from "@/components/BentoGrid";
+import type { Project } from "@/components/ProjectShowcase";
 
 export default function Home() {
   const handleScrollToProjects = () => {
@@ -202,8 +202,8 @@ export default function Home() {
         </div>
       </section>
 
-      <Section id="projects" title={projectsTitle}>
-        <BentoGrid projects={projects} />
+      <Section id="projects" title={projectsTitle} containerClassName="max-w-5xl">
+        <ProjectShowcase projects={projects} />
       </Section>
 
       <Section id="expertise" title={expertiseTitle}>

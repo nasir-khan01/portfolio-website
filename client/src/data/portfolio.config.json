@@ -62,7 +62,15 @@
         "React",
         "Custom Hooks"
       ],
-      "link": "https://algo-visualizer-gray.vercel.app/"
+      "link": "https://algo-visualizer-gray.vercel.app/",
+      "github": "",
+      "image": "",
+      "keyFeatures": [
+        "Real-time State Management",
+        "Modular Component System",
+        "Interactive Graph Algorithms",
+        "Performance Optimized"
+      ]
     }
 
   ]
