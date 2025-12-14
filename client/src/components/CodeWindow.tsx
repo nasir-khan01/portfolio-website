@@ -374,13 +374,13 @@ export function CodeWindow({ className }: CodeWindowProps) {
                  </div>
                  <div className="flex items-center gap-4">
                     <span>Ln {Math.min(visibleLines, codeLines.length)}, Col 1</span>
-                    <span>UTF-8</span>
-                    <span>
+                    <span className="hidden sm:inline">UTF-8</span>
+                    <span className="hidden sm:inline">
                       {activeTab === "developer.tsx" && "TypeScript React"}
                       {activeTab === "config.js" && "JavaScript"}
                       {activeTab === "style.css" && "CSS"}
                     </span>
-                    <div className="flex items-center gap-1">
+                    <div className="hidden sm:flex items-center gap-1">
                         <Check className="w-3 h-3" />
                         <span>Prettier</span>
                     </div>
