@@ -2,7 +2,11 @@
   "name": "Nasir khan",
   "resumeUrl": "https://drive.google.com/file/d/1sdVduaCnI-BgVQqbTOkmni268zi48VDt/view?usp=drive_link",
   "email": "nasir.projects1@gmail.com",
-  "projectsTitle": "Projects",
+  "socials": {
+    "github": "https://github.com/nasir-khan01",
+    "twitter": "https://x.com/nasir_khan83353",
+    "linkedin": "https://www.linkedin.com/in/nasir-khan01/"
+  },  "projectsTitle": "Projects",
   "expertiseTitle": "My Expertise",
   "expertise": [
     {

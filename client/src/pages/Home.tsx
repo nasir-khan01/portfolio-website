@@ -28,6 +28,7 @@ export default function Home() {
   const projectsTitle = portfolioConfig.projectsTitle || "Projects";
   const expertiseTitle = portfolioConfig.expertiseTitle || "My Expertise";
   const expertise = portfolioConfig.expertise || [];
+  const socials = portfolioConfig.socials;
   
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
@@ -141,21 +142,27 @@ export default function Home() {
                 className="flex items-center gap-1"
               >
                 <a
-                  href="#"
+                  href={socials.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors p-2"
                   data-testid="link-github-hero"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href={socials.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors p-2"
                   data-testid="link-twitter-hero"
                 >
                   <Twitter className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href={socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors p-2"
                   data-testid="link-linkedin-hero"
                 >

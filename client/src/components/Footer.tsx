@@ -1,15 +1,19 @@
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+import portfolioConfig from "@/data/portfolio.config.json";
+
 interface FooterProps {
   className?: string;
 }
 
+const socials = portfolioConfig.socials;
+
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "https://github.com/nasir-khan01", testId: "link-github" },
-  { name: "Twitter", icon: Twitter, href: "https://x.com/nasir_khan83353", testId: "link-twitter" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/nasir-khan01/", testId: "link-linkedin" },
-  { name: "Email", icon: Mail, href: "mailto:nasir.projects1@gmail.com", testId: "link-email" },
+  { name: "GitHub", icon: Github, href: socials.github, testId: "link-github" },
+  { name: "Twitter", icon: Twitter, href: socials.twitter, testId: "link-twitter" },
+  { name: "LinkedIn", icon: Linkedin, href: socials.linkedin, testId: "link-linkedin" },
+  { name: "Email", icon: Mail, href: `mailto:${portfolioConfig.email}`, testId: "link-email" },
 ];
 
 export function Footer({ className }: FooterProps) {
