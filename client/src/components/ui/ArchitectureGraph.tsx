@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 // Graph Topology
@@ -85,7 +85,6 @@ export const ArchitectureGraph = () => {
       {/* Nodes */}
       {NODES.map((node) => {
         const isActive = activePath.includes(node.id);
-        const isHovered = activePath[0] === node.id || (activePath.includes(node.id) && activePath.length > 0);
 
         return (
           <motion.div
