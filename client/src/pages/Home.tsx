@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { GrowingNetwork } from "@/components/SubtleBackground";
+import { TechIcon } from "@/components/TechIcons";
 import portfolioConfig from "@/data/portfolio.config.json";
 
 export default function Home() {
@@ -109,8 +110,9 @@ export default function Home() {
                   {item.techStack.map((tech) => (
                     <span 
                       key={tech} 
-                      className="text-xs px-2 py-1 bg-secondary rounded text-muted-foreground border border-border"
+                      className="text-xs px-2 py-1 bg-secondary rounded text-muted-foreground border border-border flex items-center gap-1.5 hover:text-foreground hover:border-[#4ade80]/50 transition-colors"
                     >
+                      <TechIcon name={tech} className="w-3 h-3" />
                       {tech}
                     </span>
                   ))}
