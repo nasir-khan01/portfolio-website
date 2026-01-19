@@ -58,6 +58,34 @@
   --tracking-normal: -0.01em;
   --spacing: 0.25rem;
 
+  /* Desktop Theme - Light Mode */
+  --desktop-bg-from: #b8d4e8;
+  --desktop-bg-to: #f0f8ff;
+  --wave-color: #7ab8d9;
+  
+  /* Window Styles - Light Mode */
+  --window-header-bg: #3d3d3d;
+  --window-header-text: #ffffff;
+  --window-body-bg: #fafafa;
+  --window-border: rgba(0, 0, 0, 0.1);
+  
+  /* Icon Styles - Light Mode */
+  --icon-color: #4a4a4a;
+  --icon-hover-color: #1a1a1a;
+  --icon-label-color: #666666;
+  --icon-label-hover-color: #333333;
+  --icon-hover-bg: rgba(0, 0, 0, 0.05);
+  
+  /* Taskbar Styles - Light Mode */
+  --taskbar-icon-bg: rgba(255, 255, 255, 0.9);
+  --taskbar-icon-hover-bg: rgba(255, 255, 255, 1);
+  --taskbar-icon-border: rgba(0, 0, 0, 0.1);
+  --taskbar-icon-color: #4a4a4a;
+  --taskbar-text-color: #666666;
+  
+  /* Accent Color */
+  --accent-orange: #ff9f1c;
+
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
   --sidebar-accent-border: hsl(var(--sidebar-accent));
@@ -123,6 +151,34 @@
   --shadow-lg: 0px 2px 0px 0px hsl(240 5% 90% / 0.00), 0px 4px 6px -1px hsl(240 5% 90% / 0.00);
   --shadow-xl: 0px 2px 0px 0px hsl(240 5% 90% / 0.00), 0px 8px 10px -1px hsl(240 5% 90% / 0.00);
   --shadow-2xl: 0px 2px 0px 0px hsl(240 5% 90% / 0.00);
+
+  /* Desktop Theme - Dark Mode */
+  --desktop-bg-from: #0f172a;
+  --desktop-bg-to: #1e293b;
+  --wave-color: #334155;
+  
+  /* Window Styles - Dark Mode */
+  --window-header-bg: #1e293b;
+  --window-header-text: #e2e8f0;
+  --window-body-bg: #0f172a;
+  --window-border: rgba(255, 255, 255, 0.1);
+  
+  /* Icon Styles - Dark Mode */
+  --icon-color: #94a3b8;
+  --icon-hover-color: #e2e8f0;
+  --icon-label-color: #94a3b8;
+  --icon-label-hover-color: #e2e8f0;
+  --icon-hover-bg: rgba(255, 255, 255, 0.05);
+  
+  /* Taskbar Styles - Dark Mode */
+  --taskbar-icon-bg: rgba(30, 41, 59, 0.9);
+  --taskbar-icon-hover-bg: rgba(51, 65, 85, 1);
+  --taskbar-icon-border: rgba(255, 255, 255, 0.1);
+  --taskbar-icon-color: #94a3b8;
+  --taskbar-text-color: #64748b;
+  
+  /* Accent Color */
+  --accent-orange: #ff9f1c;
 
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
