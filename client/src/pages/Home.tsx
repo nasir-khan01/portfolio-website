@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { GrowingNetwork } from "@/components/SubtleBackground";
 import { TechIcon } from "@/components/TechIcons";
@@ -7,6 +8,7 @@ import portfolioConfig from "@/data/portfolio.config.json";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-[#4ade80]/20 relative">
+      <SEO />
       {/* Growing Network Background Effect */}
       <GrowingNetwork />
 
