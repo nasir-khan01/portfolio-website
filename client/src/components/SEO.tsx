@@ -28,18 +28,18 @@ export const SEO = ({
     "Software Engineering"
   ],
   image = "/avatar.png",
-  url = "https://nasirkhan.dev",
+  url = "https://www.nasirkhan.dev",
   author = "Nasir Khan"
 }: SEOProps) => {
   const fullTitle = title === "Nasir Khan | Full Stack Developer" ? title : `${title} | Nasir Khan`;
-  const fullUrl = url.startsWith("http") ? url : `https://nasirkhan.dev${url}`;
-  const fullImage = image.startsWith("http") ? image : `https://nasirkhan.dev${image}`;
+  const fullUrl = url.startsWith("http") ? url : `https://www.nasirkhan.dev${url}`;
+  const fullImage = image.startsWith("http") ? image : `https://www.nasirkhan.dev${image}`;
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": author,
-    "url": "https://nasirkhan.dev",
+    "url": "https://www.nasirkhan.dev",
     "image": fullImage,
     "sameAs": [
       portfolioConfig.socials.github,
