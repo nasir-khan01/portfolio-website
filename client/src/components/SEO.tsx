@@ -27,7 +27,7 @@ export const SEO = ({
     "Scalable Systems",
     "Software Engineering"
   ],
-  image = "/avatar.png",
+  image = "/avatar-new.jpg",
   url = "https://www.nasirkhan.dev",
   author = "Nasir Khan"
 }: SEOProps) => {
