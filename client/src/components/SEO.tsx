@@ -27,7 +27,7 @@ export const SEO = ({
     "Scalable Systems",
     "Software Engineering"
   ],
-  image = "/avatar-new.jpg",
+  image = "/og-image.jpg",
   url = "https://www.nasirkhan.dev",
   author = "Nasir Khan"
 }: SEOProps) => {
@@ -61,6 +61,7 @@ export const SEO = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords.join(", ")} />
       <meta name="author" content={author} />
+      <meta name="robots" content="index, follow" />
       <link rel="canonical" href={fullUrl} />
 
       {/* Open Graph / Facebook */}
@@ -69,15 +70,21 @@ export const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={fullImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Nasir Khan - Full Stack Developer" />
       <meta property="og:site_name" content="Nasir Khan Portfolio" />
+      <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@nasir_khan83353" />
       <meta name="twitter:creator" content="@nasir_khan83353" />
       <meta name="twitter:url" content={fullUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullImage} />
+      <meta name="twitter:image:alt" content="Nasir Khan - Full Stack Developer" />
 
       {/* Structured Data */}
       <script type="application/ld+json">
