@@ -35,7 +35,7 @@ export const SEO = ({
   const fullUrl = url.startsWith("http") ? url : `https://www.nasirkhan.dev${url}`;
   const fullImage = image.startsWith("http") ? image : `https://www.nasirkhan.dev${image}`;
 
-  const structuredData = {
+  const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": author,
@@ -51,8 +51,35 @@ export const SEO = ({
     "worksFor": {
       "@type": "Organization",
       "name": "Freelance"
+    },
+    "knowsAbout": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Next.js",
+      "Full Stack Development",
+      "System Design",
+      "REST APIs",
+      "GraphQL",
+      "PostgreSQL",
+      "MongoDB"
+    ]
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Nasir Khan Portfolio",
+    "url": "https://www.nasirkhan.dev",
+    "description": description,
+    "author": {
+      "@type": "Person",
+      "name": author
     }
   };
+
+  const structuredData = [personSchema, websiteSchema];
 
   return (
     <Helmet>
