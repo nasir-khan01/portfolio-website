@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             {/* Avatar Image */}
             <img 
-              src="/avatar-new.jpg" 
+              src="/og-image.jpg" 
               alt="Nasir Khan"
               className="w-9 h-9 rounded-full object-cover border-2 border-[#4ade80]/30"
             />
