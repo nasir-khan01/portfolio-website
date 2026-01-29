@@ -52,6 +52,21 @@
         "GitHub Actions",
         "Vercel"
       ]
+    },
+    {
+      "title": "AI & LLM Integration",
+      "keyFeatures": [
+        "Building intelligent applications with RAG pipelines and Agentic AI workflows",
+        "Integrating LLMs into production systems with prompt engineering and fine-tuning",
+        "Developing AI-powered features using vector databases and embeddings"
+      ],
+      "techStack": [
+        "LangChain",
+        "LangGraph",
+        "OpenAI",
+        "Pinecone",
+        "RAG"
+      ]
     }
   ],
   "projects": [

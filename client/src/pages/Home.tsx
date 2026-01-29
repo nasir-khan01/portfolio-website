@@ -44,25 +44,21 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h1 className="text-3xl font-bold mb-4 text-foreground">{portfolioConfig.name}</h1>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            Hey! I'm Nasir, a passionate full-stack developer focused on building 
-            scalable backend systems and modern web applications.
+          <h1 className="text-3xl font-bold mb-6 text-foreground">
+            Building Scalable Backends & High-Performance Frontends.
+          </h1>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Hi, I'm Nasir. A Full-Stack Engineer specializing in the React ecosystem and NestJS.
           </p>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            Working with{" "}
-            <InlineLink href="#">Node.js</InlineLink>,{" "}
-            <InlineLink href="#">TypeScript</InlineLink>,{" "}
-            <InlineLink href="#">React</InlineLink>,{" "}
-            <InlineLink href="#">Next.js</InlineLink>, and{" "}
-            <InlineLink href="#">PostgreSQL</InlineLink>.
-            I enjoy turning complex problems into elegant solutions.
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            I engineer robust microservices and responsive, pixel-perfect web applications 
+            using TypeScript, Next.js, and PostgreSQL.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Find my{" "}
-            <InlineLink href="#projects">projects below</InlineLink>{" "}
-            or check out my{" "}
-            <InlineLink href={portfolioConfig.resumeUrl} external>resume</InlineLink>.
+            Explore my{" "}
+            <InlineLink href="#projects">technical projects</InlineLink>{" "}
+            below, or{" "}
+            <InlineLink href={portfolioConfig.socials.linkedin} external>connect with me</InlineLink>.
           </p>
         </motion.section>
 
