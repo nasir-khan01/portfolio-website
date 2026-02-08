@@ -90,7 +90,26 @@
         "Interactive Graph Algorithms",
         "Performance Optimized"
       ]
+    },
+    {
+      "id": 2,
+      "title": "SM-2 CLI",
+      "description": "A Spaced Repetition CLI built on the SM-2 algorithm. Use it to master anything: coding problems, flashcards, study material, or any skill that benefits from scheduled review.",
+      "tags": [
+        "CLI",
+        "Spaced Repetition",
+        "SM-2 Algorithm",
+        "Learning Tool"
+      ],
+      "link": "",
+      "github": "https://github.com/nasir-khan01/sm-2-cli",
+      "image": "",
+      "keyFeatures": [
+        "SM-2 Algorithm Implementation",
+        "Scheduled Review System",
+        "Flashcard Management",
+        "Progress Tracking"
+      ]
     }
-
   ]
 }
