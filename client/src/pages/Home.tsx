@@ -80,6 +80,7 @@ export default function Home() {
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                github={project.github}
                 tags={project.tags}
               />
             ))}
@@ -175,16 +176,18 @@ function ProjectItem({
   title, 
   description, 
   link, 
+  github,
   tags 
 }: { 
   title: string; 
   description: string; 
   link: string; 
+  github?: string;
   tags: string[];
 }) {
   return (
     <a
-      href={link}
+      href={link || github || "#"}
       target="_blank"
       rel="noopener noreferrer"
       className="block group"

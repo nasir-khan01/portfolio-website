@@ -53,7 +53,7 @@ export function ProjectShowcase({ projects }: ProjectShowcaseProps) {
 function SwissGridRow({ project }: { project: Project }) {
   return (
     <motion.a
-      href={project.link}
+      href={project.link || project.github || "#"}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, y: 0 }}
