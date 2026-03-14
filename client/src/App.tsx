@@ -5,6 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
@@ -25,6 +26,7 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <Router />
+            <SpeedInsights />
           </TooltipProvider>
         </ThemeProvider>
       </QueryClientProvider>
